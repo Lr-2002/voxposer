@@ -1,0 +1,25 @@
+articulated: False
+agent_object: null
+agent_radius: 0.18
+agent_height: 1.4
+sensor_front_bias: 0.0
+hfov: 57 # (realsense D435i) 79 (previous default)
+sensors:
+- rgb_1st
+- rgb_3rd
+- depth_1st
+action_space:
+- no_op
+- move_forward
+- move_backward
+- turn_left
+- turn_right
+- look_up
+- look_down
+- grab_release
+- open_close
+step_size: 0.15
+turn_angle: 5
+tilt_angle: 5
+gpt: False
+vision: False

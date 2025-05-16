@@ -1,0 +1,17 @@
+Your task is help me to judge the object in red bounding box is OBJECT_TEMPLATE or not.
+
+I will give you an image which contains a red bounding box. You need to determine whether the object in the bounding box is OBJECT_TEMPLATE based on the characteristics of the object in the bounding box and the overall information of the scene.
+
+Error analysis: Identify possible segmentation errors and classify them into the following types:
+1. Over-segmentation: The mask includes regions that should not be part of the segmentation.
+2. Under-segmentation: The mask does not fully cover the intended object.
+3. Misclassification: The mask is applied to the wrong object or region.
+
+You need to think carefully about the properties and features of the object, and compare carefully whether the object in the red box meets the features.
+
+Your output should be consisted by answer and reason. Answer template is shown below.
+Answer: True
+Reason: Your reason about why you give me the answer True.
+
+Note:
+1. You need to output with the format above: one line for answer and one line for reason.

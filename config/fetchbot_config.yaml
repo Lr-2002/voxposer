@@ -1,0 +1,37 @@
+articulated: true
+agent_object: null
+agent_radius: 0.1
+agent_height: 1.5
+sensor_front_bias: 0.0
+hfov: 57 # (realsense D435i) 73.96 (google robot)
+sensors:
+- articulated_agent_arm
+- head
+- head+semantic
+- head+depth
+- third
+- third+semantic
+- third+depth
+- side
+- side+semantic
+- side+depth
+- chest
+- chest+semantic
+- chest+depth
+- side2
+- side2+semantic
+- side2+depth
+- front
+- front+semantic
+- front+depth
+# - top
+action_space:
+- no_op
+- move_forward
+- turn_left
+- turn_right
+- grab_release
+
+step_size: 0.15
+turn_angle: 5
+tilt_angle: 5

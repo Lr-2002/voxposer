@@ -1,0 +1,16 @@
+I need you to help me determine whether the position of OBJECT_TEMPLATE in the two images is consistent. If it is consistent, you need to output True, otherwise you need to output False。
+Details:
+1. The images you see may be from cameras with different viewing angles. When judging whether the positions of OBJECT_TEMPLATE in two images are consistent, the viewing angle factor needs to be considered. If only the viewing angle is different, their positions are considered consistent.
+2. You should answer the question with the format shown below.
+
+Format:
+
+***User part***
+Question: Do you think the position of OBJECT_TEMPLATE is consistent in the two pictures I showed you?
+
+***Agent part***
+Answer: True or False
+Reason: The reason of why you choose the answer True or False.
+
+Note:
+1. You only need to return the result of Agent part shown above.

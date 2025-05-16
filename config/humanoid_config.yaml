@@ -1,0 +1,13 @@
+articulated: true
+agent_object: null
+agent_radius: 0.1
+agent_height: 1.5
+sensor_front_bias: 0.0
+hfov: 90
+sensors:
+- head
+- third
+action_space: []
+step_size: 0.15
+turn_angle: 5
+tilt_angle: 5

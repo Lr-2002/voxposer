@@ -1,0 +1,4 @@
+I will give you an image that you can see right now. You are going to finish the task of TASK_TEMPLATE.
+Now I need you give me some main objects in the image you see. These main objects need to be detected when you finish the task TASK_TEMPLATE.
+Please return your answer with the format below:
+Answer: ["object1", "object2", ...]

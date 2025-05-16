@@ -1,0 +1,17 @@
+{
+  "render_asset": "/home/robot/workspace/ManiSkill2_real2sim/data/custom/models/baked_sponge_v2/textured.vis.glb",
+  "up": [
+    0,
+    1,
+    0
+  ],
+  "front": [
+    0,
+    0,
+    -1
+  ],
+  "shader_type": 1,
+  "semantic_id": 1,
+  "collision_asset": "/home/robot/workspace/ManiSkill2_real2sim/data/custom/models/baked_sponge_v2/textured.vis.glb",
+  "scale": [1.0,1.0,1.0]
+}

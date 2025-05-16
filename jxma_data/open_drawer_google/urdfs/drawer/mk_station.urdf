@@ -1,0 +1,79 @@
+<robot name="mk_station" version="1.0">
+  <joint name="top_drawer_joint" type="prismatic">
+    <limit lower="0" upper="0.5" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.66800"/>
+    <parent link="body"/>
+    <child link="top_drawer"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="middle_drawer_joint" type="prismatic">
+    <limit lower="0" upper="0.5" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.42300"/>
+    <parent link="body"/>
+    <child link="middle_drawer"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="bottom_drawer_joint" type="prismatic">
+    <limit lower="0" upper="0.5" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.17800"/>
+    <parent link="body"/>
+    <child link="bottom_drawer"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <link name="body">
+    <visual>
+      <origin xyz="0. 0. 0.855" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/body.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0. 0. 0.855" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/body.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="top_drawer">
+    <visual>
+      <origin xyz="0.0 0.6 0.185 " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/drawer.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.6 0.185 " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/drawer.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="middle_drawer">
+    <visual>
+      <origin xyz="0.0 0.3 0.43 " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/drawer.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.3 0.43 " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/drawer.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="bottom_drawer">
+    <visual>
+      <origin xyz="0.0 0.0 0.68" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/drawer.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.68" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/drawer.obj"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

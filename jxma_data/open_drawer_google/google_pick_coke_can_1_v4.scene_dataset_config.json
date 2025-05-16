@@ -1,0 +1,48 @@
+{
+    "stages": {
+        "paths": {
+            ".json": [
+                "configs/stages"
+            ]
+        }
+    },
+    "objects": {
+        "paths": {
+            ".json": [
+                "configs/objects/static",
+                "configs/objects/dynamic"
+            ]
+        }
+    },
+    "articulated_objects": {
+        "paths": {
+            ".urdf": [
+                "urdfs/*/"
+            ]
+        }
+    },
+    "light_setups": {
+        "default_attributes": {
+            "positive_intensity_scale": 2.5,
+            "negative_intensity_scale": 0.1
+        },
+        "paths": {
+            ".json": [
+                "configs/lighting"
+            ]
+        }
+    },
+    "scene_instances": {
+        "default_attributes": {
+            "semantic_scene_instance": "apt_0_ssd_map"
+        },
+        "paths": {
+            ".json": [
+                "configs/scenes"
+            ]
+        }
+    },
+    "semantic_scene_descriptor_instances": {
+        "apt_0_ssd_map": "configs/ssd/apt_0_semantic_lexicon.json"
+    }
+}

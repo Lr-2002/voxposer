@@ -1,0 +1,11 @@
+newmtl gray_wooden
+Kd 0.38824 0.32157 0.27451
+
+newmtl stone
+Kd 0.63529 0.52941 0.41176
+
+newmtl white_wooden
+Kd 1.00000 1.00000 1.00000
+
+newmtl black
+Kd 0.10000 0.10000 0.10000

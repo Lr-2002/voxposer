@@ -1,0 +1,9 @@
+You are going to finish the task of TASK_TEMPLATE. I want you help me find the object in TASK_TEMPLATE now.
+For example:
+Task description: pick up the apple on the table
+Answer: ["apple", "table"]
+
+Please return your answer with the format below:
+Answer: ["object1", "object2", ...]
+
+Now please give me answer of objects in TASK_TEMPLATE.

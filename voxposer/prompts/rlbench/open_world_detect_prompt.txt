@@ -1,0 +1,20 @@
+Now you can see OBJECT_TEMPLATE on the table and you need to finish the task TASK_TEMPLATE.
+You need to think about what parts of the object you need to detect in addition to the object information I give you to complete this task?
+Your task is if one object is composed by many parts, for example, microwave has door, handle and other parts to compose, and when you finish the task TASK_TEMPLATE, what parts' infomation do you need? If you need some parts' information, you need to add it into the answer.
+
+Example:
+***User part***
+task_name: open the microwave's door
+object_list: [microwave]
+Please tell me if you can see object_list on the table and what should you need to finish task of 'open the microwave's door'?
+***Agent part***
+Answer: ["handle of microwave"] # Answer is a list of string, each string describe a thing that I should recognize for finish TASK_TEMPLATE
+Reason: I need to detect handle's position of microwave then I can grasp it and open the door. # For each thing you given me, you should give the a detailed reason about why you need it to finish TASK_TEMPLATE
+
+Finally:
+You should understand example shown in above and then give me an answer for: If you want to finish the task TASK_TEMPLATE and you can see OBJECT_TEMPLATE on the table, what else do you need to check to complete this task?
+Please give me the answer follow the format above. I am so grateful for you can help me.
+
+Notes:
+1. You must follow the format of Answer I give you above. You only need to give the answer and corresponding reason.
+2. You answer must be an object or a part of object but not some attributes of an object. For example, you cannot give me the answer of microwave's position, because it's not an object or a part of an object, it just is an attribute of microwave.

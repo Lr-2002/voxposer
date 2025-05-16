@@ -1,0 +1,33 @@
+{
+    "default_lighting": "lighting/google_pick_coke_can_1_v4",
+    "stage_instance": {
+        "template_name": "stages/google_pick_coke_can_1_v4",
+        "translation": [
+            0.9671978878982255,
+            1.455136637969757,
+            1.7042481847957789
+        ],
+        "transformation": {
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        }
+    },
+    "object_instances": [],
+    "articulated_object_instances": [
+        {
+            "template_name": "mk_station",
+            "translation_origin": "COM",
+            "fixed_base": true,
+            "uniform_scale": 1,
+            "motion_type": "DYNAMIC",
+            "translation": [
+                -2.1,
+                0,
+                1.0
+            ]
+        }
+    ]
+}

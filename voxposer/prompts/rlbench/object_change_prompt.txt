@@ -1,0 +1,13 @@
+Now I want you help me to judge an object's position was changed or not after a series of manipulation.
+
+
+Example:
+series_action: ['close to refridgerator's door handle']
+object_list: ['refridgerator's door handle']
+Please tell me if object's position which in object_list was changed or not and give me a reason.
+Answer: No # Answer is Yes or No, which describe the object in object_list is changed or not after action in series_action list.
+Reason: action 'close to refridgerator's door handle' only makes end-effector close to refridgerator's handle but not manipulate it, so it's position is not changed.
+
+Finally:
+You should understand example shown in above and then give me an answer for: position of OBJECT_LIST is changed or not after SERIES_ACTION compared raw position before SERIES_ACTION.
+Please give me the answer follow the format above. I am so grateful for you can help me.

@@ -1,0 +1,1906 @@
+Loaded 48 environments from /home/lr-2002/project/reasoning_manipulation/ManiSkill/env_ins_objects.pkl
+
+----- Processing environment: Tabletop-Clean-For-Dinner-v1 -----
+Instruction: Arrange the bowl, fork onto the plate, clean for dinner 
+Objects: ['scene-0_plate', 'scene-0_fork', 'scene-0-bowl_bowl', 'scene-0-bowl_bowl_base', 'gripper']
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/plate.json
+Configuration contents: {'usd-path': 'assets_glb/plate_new.glb', 'scale': 0.02, 'mass': 0.1, 'friction': 1.0, 'orientation': [-90, 0, 0]}
+----loaded orientation is  [-90, 0, 0]
+Loading asset: plate from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/plate_new.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/plate_new_collision.glb
+-------- input scale is  [0.02, 0.02, 0.02]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/plate_new_collision.glb
+the mass have been set to  tensor([0.1000])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: plate
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/fork.json
+Configuration contents: {'usd-path': 'assets_glb/fork.glb', 'scale': 1, 'mass': 0.05, 'friction': 1.0}
+----loaded orientation is  [0, 0, 0]
+Loading asset: fork from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/fork.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/fork_collision.glb
+-------- input scale is  [1, 1, 1]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/fork_collision.glb
+the mass have been set to  tensor([0.0500])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: fork
+ - scene-0_table-workspace 
+ - scene-0_plate 
+ - scene-0_fork 
+ - scene-0_ground 
+ - scene-0_panda_wristcam 
+ - scene-0_bowl 
+cannot connect to perception client, please check it is started
+cannot connect to grasp pose detection client, please check it is started
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+Calling VoxPoser with processed objects: ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "planner" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: Arrange the bowl, fork onto the plate, clean for dinner .[39;49;00m[37m[39;49;00m
+composer([33m"[39;49;00m[33mgrasp the fork[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mmove to 10cm to the right of the plate[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mopen gripper[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mgrasp the bowl_bowl[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mmove to 5cm above the plate[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mopen gripper[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+[37m# done[39;49;00m[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: grasp the fork.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+affordance_map = get_affordance_map([33m'[39;49;00m[33ma point at the center of the fork handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+rotation_map = get_rotation_map([33m'[39;49;00m[33mface the fork handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+gripper_map = get_gripper_map([33m'[39;49;00m[33mopen everywhere except 1cm around the fork handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: gripper.[39;49;00m[37m[39;49;00m
+gripper = detect([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = gripper[37m[39;49;00m
+
+
+gripper [80 50 66] [1.3412908e-05 1.8415449e-08 1.6978192e-01]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_affordance_map" generated code
+########################################
+[37m# Query: a point at the center of the fork handle.[39;49;00m[37m[39;49;00m
+affordance_map = get_empty_affordance_map()[37m[39;49;00m
+fork_handle = parse_query_obj([33m'[39;49;00m[33mfork handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+x, y, z = fork_handle.position[37m[39;49;00m
+affordance_map[x, y, z] = [34m1[39;49;00m[37m[39;49;00m
+ret_val = affordance_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_rotation_map" generated code
+########################################
+[37m# Query: face the fork handle.[39;49;00m[37m[39;49;00m
+rotation_map = get_empty_rotation_map()[37m[39;49;00m
+fork_handle = parse_query_obj([33m'[39;49;00m[33mfork handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+target_rotation = vec2quat(fork_handle.normal)[37m[39;49;00m
+rotation_map[:, :, :] = target_rotation[37m[39;49;00m
+ret_val = rotation_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_gripper_map" generated code
+########################################
+[37m# Query: open everywhere except 1cm around the fork handle.[39;49;00m[37m[39;49;00m
+gripper_map = get_empty_gripper_map()[37m[39;49;00m
+[37m# open everywhere[39;49;00m[37m[39;49;00m
+gripper_map[:, :, :] = [34m1[39;49;00m[37m[39;49;00m
+[37m# close when 1cm around the fork handle[39;49;00m[37m[39;49;00m
+fork_handle = parse_query_obj([33m'[39;49;00m[33mfork handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+set_voxel_by_radius(gripper_map, fork_handle.position, radius_cm=[34m1[39;49;00m, value=[34m0[39;49;00m)[37m[39;49;00m
+ret_val = gripper_map[37m[39;49;00m
+
+
+gripper [80 50 66] [1.3412908e-05 1.8415449e-08 1.6978192e-01]
+gripper [80 50 66] [1.3412908e-05 1.8415449e-08 1.6978192e-01]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: fork handle.[39;49;00m[37m[39;49;00m
+fork = detect([33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = fork[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+all name  {'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20} fork
+---- query_name fork
+object id is 21
+obj size (1422, 3)
+[91m fork normal is [0.93967621 0.22389322 0.21390129]  [0m
+[91m fork position is [ 0.10799999 -0.19325348  0.01027347]  [0m
+fork [85 38 49] [ 0.10799999 -0.19325348  0.00027347]
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+[91m fork normal is [0.93967621 0.22389322 0.21390129]  [0m
+[91m fork position is [ 0.10799999 -0.19325348  0.01027347]  [0m
+fork [85 38 49] [ 0.10799999 -0.19325348  0.00027347]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: fork handle.[39;49;00m[37m[39;49;00m
+fork = detect([33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = fork[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+[91m fork normal is [0.93967621 0.22389322 0.21390129]  [0m
+[91m fork position is [ 0.10799999 -0.19325348  0.01027347]  [0m
+fork [85 38 49] [ 0.10799999 -0.19325348  0.00027347]
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+[91m fork normal is [0.93967621 0.22389322 0.21390129]  [0m
+[91m fork position is [ 0.10799999 -0.19325348  0.01027347]  [0m
+fork [85 38 49] [ 0.10799999 -0.19325348  0.00027347]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: fork handle.[39;49;00m[37m[39;49;00m
+fork = detect([33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = fork[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+[91m fork normal is [0.93967621 0.22389322 0.21390129]  [0m
+[91m fork position is [ 0.10799999 -0.19325348  0.01027347]  [0m
+fork [85 38 49] [ 0.10799999 -0.19325348  0.00027347]
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+[91m fork normal is [0.93967621 0.22389322 0.21390129]  [0m
+[91m fork position is [ 0.10799999 -0.19325348  0.01027347]  [0m
+fork [85 38 49] [ 0.10799999 -0.19325348  0.00027347]
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+[planners.py | 21:7:23.542] start
+[planners.py | 21:7:23.618] start optimizing, start_pos: [80 50 66]
+[planners.py | 21:7:23.624] optimization finished; path length: 10
+[planners.py | 21:7:23.625] after postprocessing, path length: 10
+[planners.py | 21:7:23.625] last waypoint: [84.60979021 38.23496503 48.82377622]
+[94m[interfaces.py | 21:7:23] planner time: 0.085s[0m
+[94m[interfaces.py | 21:7:23] overwriting gripper to less common value for the last waypoint[0m
+[94m[interfaces.py | 21:7:23] start executing path via controller (12 waypoints)[0m
+the arm quat and pose in apply_action [-0.00601506  0.00780952  0.16587549  0.          1.          0.
+  0.          1.        ]
+gripper [80 50 66] [-0.00518653  0.00707282  0.16647187]
+[94m[interfaces.py | 21:7:24] completed waypoint 1 (wp: [-0.006  0.008  0.166], actual: [-0.005  0.007  0.166], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.2750000059604645)[0m
+the arm quat and pose in apply_action [ 0.04983485 -0.02278072  0.14715689  0.          1.          0.
+  0.          1.        ]
+screw plan failed
+result = -1, cannot move to target pose by IK planner
+gripper [80 50 66] [-0.00519409  0.00708784  0.16646588]
+[94m[interfaces.py | 21:7:24] completed waypoint 2 (wp: [ 0.05  -0.023  0.147], actual: [-0.005  0.007  0.166], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.2750000059604645)[0m
+the arm quat and pose in apply_action [ 0.09082747 -0.05653554  0.12716681  0.          1.          0.
+  0.          1.        ]
+gripper [84 46 62] [ 0.08718978 -0.05694536  0.12536782]
+[94m[interfaces.py | 21:7:27] completed waypoint 3 (wp: [ 0.091 -0.057  0.127], actual: [ 0.087 -0.057  0.125], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.18199999630451202)[0m
+the arm quat and pose in apply_action [ 0.11854053 -0.0910815   0.10639966  0.          1.          0.
+  0.          1.        ]
+gripper [86 44 60] [ 0.11664756 -0.08995762  0.10590469]
+[94m[interfaces.py | 21:7:29] completed waypoint 4 (wp: [ 0.119 -0.091  0.106], actual: [ 0.117 -0.09   0.106], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.1469999998807907)[0m
+the arm quat and pose in apply_action [ 0.13455153 -0.12404513  0.08534998  0.          1.          0.
+  0.          1.        ]
+gripper [87 42 58] [ 0.13346356 -0.12349751  0.0843988 ]
+[94m[interfaces.py | 21:7:31] completed waypoint 5 (wp: [ 0.135 -0.124  0.085], actual: [ 0.133 -0.123  0.084], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.11500000208616257)[0m
+the arm quat and pose in apply_action [ 0.14043784 -0.1530531   0.06451225  0.          1.          0.
+  0.          1.        ]
+gripper [87 40 56] [ 0.1392321  -0.15136337  0.06424385]
+[94m[interfaces.py | 21:7:32] completed waypoint 6 (wp: [ 0.14  -0.153  0.065], actual: [ 0.139 -0.151  0.064], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.09000000357627869)[0m
+the arm quat and pose in apply_action [ 0.13777721 -0.1757322   0.0443809   0.          1.          0.
+  0.          1.        ]
+gripper [87 39 54] [ 0.13705346 -0.17337328  0.04467437]
+[94m[interfaces.py | 21:7:33] completed waypoint 7 (wp: [ 0.138 -0.176  0.044], actual: [ 0.137 -0.173  0.045], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.06800000369548798)[0m
+the arm quat and pose in apply_action [ 0.12814713 -0.18970871  0.02545029  0.          1.          0.
+  0.          1.        ]
+gripper [86 38 52] [ 0.12840745 -0.18789923  0.02575924]
+[94m[interfaces.py | 21:7:34] completed waypoint 8 (wp: [ 0.128 -0.19   0.025], actual: [ 0.128 -0.188  0.026], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.04800000041723251)[0m
+the arm quat and pose in apply_action [ 0.11312509 -0.19260955  0.00821501  0.          1.          0.
+  0.          1.        ]
+gripper [86 38 51] [ 0.11738726 -0.19190036  0.01465986]
+[94m[interfaces.py | 21:7:36] completed waypoint 9 (wp: [ 0.113 -0.193  0.008], actual: [ 0.117 -0.192  0.015], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.032999999821186066)[0m
+the arm quat and pose in apply_action [ 0.09428859 -0.18206114 -0.00683054  0.          1.          0.
+  0.          0.        ]
+gripper [85 38 51] [ 0.1056094  -0.18650952  0.01385508]
+[94m[interfaces.py | 21:7:37] completed waypoint 10 (wp: [ 0.094 -0.182 -0.007], actual: [ 0.106 -0.187  0.014], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.024000000208616257)[0m
+the arm quat and pose in apply_action [ 0.09428859 -0.18206114 -0.00683054  0.          1.          0.
+  0.          0.        ]
+gripper [85 38 50] [ 0.10420749 -0.18468551  0.00968474]
+[94m[interfaces.py | 21:7:38] completed waypoint 11 (wp: [ 0.094 -0.182 -0.007], actual: [ 0.104 -0.185  0.01 ], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.01899999938905239)[0m
+the arm quat and pose in apply_action [ 0.09428859 -0.18206114 -0.00683054  0.          1.          0.
+  0.          0.        ]
+gripper [85 38 50] [ 0.1043183  -0.18449225  0.0096897 ]
+[94m[interfaces.py | 21:7:39] completed waypoint 12 (wp: [ 0.094 -0.182 -0.007], actual: [ 0.104 -0.184  0.01 ], target: [ 0.094 -0.182 -0.007], start: [-0.006  0.008  0.166], dist2target: 0.01899999938905239)[0m
+[94m[interfaces.py | 21:7:39] reached target; terminating [0m
+[94m[interfaces.py | 21:7:39] finished executing path via controller[0m
+the arm quat and pose in apply_action [ 0.09428859 -0.18206114 -0.00683054  0.          1.          0.
+  0.          0.        ]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: back to default pose.[39;49;00m[37m[39;49;00m
+reset_to_default_pose()[37m[39;49;00m
+
+
+the arm quat and pose in apply_action [ 1.34129077e-05  1.84154487e-08  1.69781923e-01 -3.39042629e-07
+  9.99999940e-01  3.97890806e-04 -1.17626357e-07  0.00000000e+00]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: move to 10cm to the right of the plate.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+affordance_map = get_affordance_map([33m'[39;49;00m[33ma point 10cm to the right of the plate[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, affordance_map=affordance_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: gripper.[39;49;00m[37m[39;49;00m
+gripper = detect([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = gripper[37m[39;49;00m
+
+
+gripper [80 49 66] [-0.00763982 -0.00219111  0.16571371]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_affordance_map" generated code
+########################################
+[37m# Query: a point 10cm to the right of the plate.[39;49;00m[37m[39;49;00m
+affordance_map = get_empty_affordance_map()[37m[39;49;00m
+plate = parse_query_obj([33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+(min_x, min_y, min_z), (max_x, max_y, max_z) = plate.aabb[37m[39;49;00m
+center_x, center_y, center_z = plate.position[37m[39;49;00m
+[37m# 10cm to the right of so we add to y-axis[39;49;00m[37m[39;49;00m
+x = center_x[37m[39;49;00m
+y = max_y + cm2index([34m10[39;49;00m, [33m'[39;49;00m[33my[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+z = center_z[37m[39;49;00m
+affordance_map[x, y, z] = [34m1[39;49;00m[37m[39;49;00m
+ret_val = affordance_map[37m[39;49;00m
+
+
+gripper [80 49 66] [-0.00763982 -0.00219111  0.16571371]
+gripper [80 49 66] [-0.00763982 -0.00219111  0.16571371]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: plate.[39;49;00m[37m[39;49;00m
+plate = detect([33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = plate[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+all name  {'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20} plate
+---- query_name plate
+object id is 18
+obj size (7975, 3)
+[91m plate normal is [-0.0450562   0.00572101  0.8197317 ]  [0m
+[91m plate position is [ 0.01442002 -0.00217497  0.01026609]  [0m
+plate [81 49 49] [ 0.01442002 -0.00217497  0.00026609]
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+[91m plate normal is [-0.0450562   0.00572101  0.8197317 ]  [0m
+[91m plate position is [ 0.01442002 -0.00217497  0.01026609]  [0m
+plate [81 49 49] [ 0.01442002 -0.00217497  0.00026609]
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+[91m plate normal is [-0.0450562   0.00572101  0.8197317 ]  [0m
+[91m plate position is [ 0.01442002 -0.00217497  0.01026609]  [0m
+plate [81 49 49] [ 0.01442002 -0.00217497  0.00026609]
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+[planners.py | 21:7:43.539] start
+[planners.py | 21:7:43.610] start optimizing, start_pos: [80 49 66]
+[planners.py | 21:7:43.616] optimization finished; path length: 10
+[planners.py | 21:7:43.616] after postprocessing, path length: 10
+[planners.py | 21:7:43.616] last waypoint: [81.26993007 60.78461538 48.92027972]
+[94m[interfaces.py | 21:7:43] planner time: 0.079s[0m
+[94m[interfaces.py | 21:7:43] start executing path via controller (12 waypoints)[0m
+the arm quat and pose in apply_action [ 0.0092988  -0.00636297  0.16508436  0.          1.          0.
+  0.          0.        ]
+gripper [80 49 66] [ 0.00791507 -0.00453694  0.1652483 ]
+[94m[interfaces.py | 21:7:44] completed waypoint 1 (wp: [ 0.009 -0.006  0.165], actual: [ 0.008 -0.005  0.165], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.2540000081062317)[0m
+the arm quat and pose in apply_action [0.02954805 0.02151489 0.14784908 0.         1.         0.
+ 0.         0.        ]
+gripper [81 51 64] [0.02752068 0.0231655  0.14815658]
+[94m[interfaces.py | 21:7:45] completed waypoint 2 (wp: [0.03  0.022 0.148], actual: [0.028 0.023 0.148], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.22200000286102295)[0m
+the arm quat and pose in apply_action [0.03851879 0.05474234 0.13036656 0.         1.         0.
+ 0.         0.        ]
+gripper [82 53 62] [0.0371915  0.05831154 0.12959144]
+[94m[interfaces.py | 21:7:47] completed waypoint 3 (wp: [0.039 0.055 0.13 ], actual: [0.037 0.058 0.13 ], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.18400000035762787)[0m
+the arm quat and pose in apply_action [0.03908396 0.09028655 0.11255443 0.         1.         0.
+ 0.         0.        ]
+gripper [82 55 61] [0.03753841 0.09087235 0.11332571]
+[94m[interfaces.py | 21:7:48] completed waypoint 4 (wp: [0.039 0.09  0.113], actual: [0.038 0.091 0.113], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.1509999930858612)[0m
+the arm quat and pose in apply_action [0.03411579 0.12511504 0.09433025 0.         1.         0.
+ 0.         0.        ]
+gripper [82 57 59] [0.03258669 0.1259499  0.09503701]
+[94m[interfaces.py | 21:7:49] completed waypoint 5 (wp: [0.034 0.125 0.094], actual: [0.033 0.126 0.095], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.11599999666213989)[0m
+the arm quat and pose in apply_action [0.02648723 0.15619504 0.07561159 0.         1.         0.
+ 0.         0.        ]
+gripper [81 59 57] [0.02566701 0.1543222  0.0768598 ]
+[94m[interfaces.py | 21:7:50] completed waypoint 6 (wp: [0.026 0.156 0.076], actual: [0.026 0.154 0.077], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.08699999749660492)[0m
+the arm quat and pose in apply_action [0.01907039 0.18049395 0.05631608 0.         1.         0.
+ 0.         0.        ]
+gripper [81 61 55] [0.01841888 0.17919376 0.05763075]
+[94m[interfaces.py | 21:7:51] completed waypoint 7 (wp: [0.019 0.18  0.056], actual: [0.018 0.179 0.058], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.06400000303983688)[0m
+the arm quat and pose in apply_action [0.01473796 0.19497919 0.03636128 0.         1.         0.
+ 0.         0.        ]
+gripper [81 62 53] [0.01392489 0.19498302 0.03734958]
+[94m[interfaces.py | 21:7:52] completed waypoint 8 (wp: [0.015 0.195 0.036], actual: [0.014 0.195 0.037], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.04699999839067459)[0m
+the arm quat and pose in apply_action [0.01636255 0.1966179  0.01566482 0.         1.         0.
+ 0.         0.        ]
+gripper [81 62 51] [0.01506777 0.198032   0.01582605]
+[94m[interfaces.py | 21:7:53] completed waypoint 9 (wp: [0.016 0.197 0.016], actual: [0.015 0.198 0.016], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.028999999165534973)[0m
+the arm quat and pose in apply_action [ 0.02681673  0.18237764 -0.00585574  0.          1.          0.
+  0.          0.        ]
+gripper [81 62 50] [0.02390558 0.19734666 0.00934637]
+[94m[interfaces.py | 21:7:54] completed waypoint 10 (wp: [ 0.027  0.182 -0.006], actual: [0.024 0.197 0.009], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.02199999988079071)[0m
+[94m[interfaces.py | 21:7:54] skip waypoint 11 because it is moving in opposite direction of the final target[0m
+the arm quat and pose in apply_action [ 0.02681673  0.18237764 -0.00585574  0.          1.          0.
+  0.          0.        ]
+gripper [81 62 50] [0.02560261 0.19792694 0.0093678 ]
+[94m[interfaces.py | 21:7:55] completed waypoint 12 (wp: [ 0.027  0.182 -0.006], actual: [0.026 0.198 0.009], target: [ 0.027  0.182 -0.006], start: [ 0.009 -0.006  0.165], dist2target: 0.02199999988079071)[0m
+[94m[interfaces.py | 21:7:55] reached target; terminating [0m
+[94m[interfaces.py | 21:7:55] finished executing path via controller[0m
+the arm quat and pose in apply_action [ 0.02681673  0.18237764 -0.00585574  0.          1.          0.
+  0.          0.        ]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: open gripper.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+gripper_map = get_gripper_map([33m'[39;49;00m[33mopen everywhere[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, gripper_map=gripper_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: gripper.[39;49;00m[37m[39;49;00m
+gripper = detect([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = gripper[37m[39;49;00m
+
+
+gripper [81 62 50] [0.02703681 0.19801874 0.00941519]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_gripper_map" generated code
+########################################
+[37m# Query: open everywhere.[39;49;00m[37m[39;49;00m
+gripper_map = get_empty_gripper_map()[37m[39;49;00m
+[37m# open everywhere[39;49;00m[37m[39;49;00m
+gripper_map[:, :, :] = [34m1[39;49;00m[37m[39;49;00m
+ret_val = gripper_map[37m[39;49;00m
+
+
+gripper [81 62 50] [0.02703681 0.19801874 0.00941519]
+[94m[interfaces.py | 21:7:55] finished executing path via controller[0m
+the arm quat and pose in apply_action [ 0.02703681  0.19801874  0.00941519 -0.00568247  0.999951    0.0072152
+  0.00370052  1.        ]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: back to default pose.[39;49;00m[37m[39;49;00m
+reset_to_default_pose()[37m[39;49;00m
+
+
+the arm quat and pose in apply_action [ 1.34129077e-05  1.84154487e-08  1.69781923e-01 -3.39042629e-07
+  9.99999940e-01  3.97890806e-04 -1.17626357e-07  1.00000000e+00]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: grasp the bowl_bowl.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+affordance_map = get_affordance_map([33m'[39;49;00m[33ma point at the center of the bowl_bowl[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+rotation_map = get_rotation_map([33m'[39;49;00m[33mface the bowl_bowl[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+gripper_map = get_gripper_map([33m'[39;49;00m[33mopen everywhere except 1cm around the bowl_bowl[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: gripper.[39;49;00m[37m[39;49;00m
+gripper = detect([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = gripper[37m[39;49;00m
+
+
+gripper [80 50 66] [-0.00804973  0.00075754  0.16741464]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_affordance_map" generated code
+########################################
+[37m# Query: a point at the center of the bowl_bowl.[39;49;00m[37m[39;49;00m
+affordance_map = get_empty_affordance_map()[37m[39;49;00m
+bowl_bowl = parse_query_obj([33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+center_x, center_y, center_z = bowl_bowl.position[37m[39;49;00m
+affordance_map[center_x, center_y, center_z] = [34m1[39;49;00m[37m[39;49;00m
+ret_val = affordance_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_rotation_map" generated code
+########################################
+[37m# Query: face the bowl_bowl.[39;49;00m[37m[39;49;00m
+rotation_map = get_empty_rotation_map()[37m[39;49;00m
+bowl_bowl = parse_query_obj([33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+target_rotation = vec2quat(bowl_bowl.normal)[37m[39;49;00m
+rotation_map[:, :, :] = target_rotation[37m[39;49;00m
+ret_val = rotation_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_gripper_map" generated code
+########################################
+[37m# Query: open everywhere except 1cm around the bowl_bowl.[39;49;00m[37m[39;49;00m
+gripper_map = get_empty_gripper_map()[37m[39;49;00m
+[37m# open everywhere[39;49;00m[37m[39;49;00m
+gripper_map[:, :, :] = [34m1[39;49;00m[37m[39;49;00m
+[37m# close when 1cm around the bowl[39;49;00m[37m[39;49;00m
+bowl = parse_query_obj([33m'[39;49;00m[33mbowl[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+set_voxel_by_radius(gripper_map, bowl.position, radius_cm=[34m1[39;49;00m, value=[34m0[39;49;00m)[37m[39;49;00m
+ret_val = gripper_map[37m[39;49;00m
+
+
+gripper [80 50 66] [-0.00804973  0.00075754  0.16741464]
+gripper [80 50 66] [-0.00804973  0.00075754  0.16741464]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mplate[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mfork[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbowl_bowl_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: bowl_bowl.[39;49;00m[37m[39;49;00m
+bowl_bowl = detect([33m'[39;49;00m[33mbowl_bowl[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = bowl_bowl[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20}
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+all name  {'table-workspace': 16, 'ground': 17, 'plate': 18, 'fork': 21, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'bowl': 19, 'bowl_base': 20} bowl_bowl
+---- query_name bowl_bowl
+Error executing code:
+movable = parse_query_obj('gripper')
+affordance_map = get_affordance_map('a point at the center of the bowl_bowl')
+rotation_map = get_rotation_map('face the bowl_bowl')
+gripper_map = get_gripper_map('open everywhere except 1cm around the bowl_bowl')
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)
+Error executing code:
+objects = ['plate', 'fork', 'bowl_bowl', 'bowl_bowl_base', 'gripper']
+composer("grasp the fork")
+composer("back to default pose")
+composer("move to 10cm to the right of the plate")
+composer("open gripper")
+composer("back to default pose")
+composer("grasp the bowl_bowl")
+composer("back to default pose")
+composer("move to 5cm above the plate")
+composer("open gripper")
+composer("back to default pose")
+# done
+Error processing Tabletop-Clean-For-Dinner-v1: your input query_name is not in the list 
+
+----- Processing environment: Tabletop-Close-Cabinet-v1 -----
+Instruction: close the cabinet door
+Objects: ['scene-0-cabinet-1054_base', 'scene-0-cabinet-1054_link_2', 'scene-0-cabinet-1054_link_0', 'scene-0-cabinet-1054_link_1', 'gripper']
+--- set joint joint_0 tensor(1.3773)
+ - scene-0_table-workspace 
+ - scene-0_ground 
+ - scene-0_panda_wristcam 
+ - scene-0_cabinet-1054 
+cannot connect to perception client, please check it is started
+cannot connect to grasp pose detection client, please check it is started
+--- set joint joint_0 tensor(1.3773)
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+Calling VoxPoser with processed objects: ['cabinet-1054_base', 'cabinet-1054_link_2', 'cabinet-1054_link_0', 'cabinet-1054_link_1', 'gripper']
+--- set joint joint_0 tensor(1.3773)
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "planner" generated code
+## context: "objects = ['cabinet-1054_base', 'cabinet-1054_link_2', 'cabinet-1054_link_0', 'cabinet-1054_link_1', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mcabinet-1054_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: close the cabinet door.[39;49;00m[37m[39;49;00m
+composer([33m"[39;49;00m[33mgrasp the cabinet-1054_link_0 handle[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mpush the cabinet-1054_link_0 by 25cm towards the cabinet-1054_base[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+[37m# done[39;49;00m[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: grasp the cabinet-1054_link_0 handle.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+affordance_map = get_affordance_map([33m'[39;49;00m[33ma point at the center of the cabinet-1054_link_0 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+rotation_map = get_rotation_map([33m'[39;49;00m[33mface the cabinet-1054_link_0 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+gripper_map = get_gripper_map([33m'[39;49;00m[33mopen everywhere except 1cm around the cabinet-1054_link_0 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['cabinet-1054_base', 'cabinet-1054_link_2', 'cabinet-1054_link_0', 'cabinet-1054_link_1', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mcabinet-1054_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: gripper.[39;49;00m[37m[39;49;00m
+gripper = detect([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = gripper[37m[39;49;00m
+
+
+gripper [80 49 67] [ 0.00336026 -0.00383766  0.18031228]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_affordance_map" generated code
+########################################
+[37m# Query: a point at the center of the cabinet-1054_link_0 handle.[39;49;00m[37m[39;49;00m
+affordance_map = get_empty_affordance_map()[37m[39;49;00m
+cabinet_handle = parse_query_obj([33m'[39;49;00m[33mcabinet-1054_link_0 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+x, y, z = cabinet_handle.position[37m[39;49;00m
+affordance_map[x, y, z] = [34m1[39;49;00m[37m[39;49;00m
+ret_val = affordance_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_rotation_map" generated code
+########################################
+[37m# Query: face the cabinet-1054_link_0 handle.[39;49;00m[37m[39;49;00m
+rotation_map = get_empty_rotation_map()[37m[39;49;00m
+cabinet_handle = parse_query_obj([33m'[39;49;00m[33mcabinet-1054_link_0 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+target_rotation = vec2quat(cabinet_handle.normal)[37m[39;49;00m
+rotation_map[:, :, :] = target_rotation[37m[39;49;00m
+ret_val = rotation_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_gripper_map" generated code
+########################################
+[37m# Query: open everywhere except 1cm around the cabinet-1054_link_0 handle.[39;49;00m[37m[39;49;00m
+gripper_map = get_empty_gripper_map()[37m[39;49;00m
+[37m# open everywhere[39;49;00m[37m[39;49;00m
+gripper_map[:, :, :] = [34m1[39;49;00m[37m[39;49;00m
+[37m# close when 1cm around the cabinet-1054_link_0 handle[39;49;00m[37m[39;49;00m
+cabinet_handle = parse_query_obj([33m'[39;49;00m[33mcabinet-1054_link_0 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+set_voxel_by_radius(gripper_map, cabinet_handle.position, radius_cm=[34m1[39;49;00m, value=[34m0[39;49;00m)[37m[39;49;00m
+ret_val = gripper_map[37m[39;49;00m
+
+
+gripper [80 49 67] [ 0.00336026 -0.00383766  0.18031228]
+gripper [80 49 67] [ 0.00336026 -0.00383766  0.18031228]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['cabinet-1054_base', 'cabinet-1054_link_2', 'cabinet-1054_link_0', 'cabinet-1054_link_1', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mcabinet-1054_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: cabinet-1054_link_0 handle.[39;49;00m[37m[39;49;00m
+handle_0 = detect([33m'[39;49;00m[33mcabinet-1054_link_0[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = handle_0[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'base': 18, 'link_2': 19, 'link_0': 20, 'link_1': 21}
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+all name  {'table-workspace': 16, 'ground': 17, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'base': 18, 'link_2': 19, 'link_0': 20, 'link_1': 21} cabinet-1054_link_0
+---- query_name cabinet-1054_link_0
+Error executing code:
+movable = parse_query_obj('gripper')
+affordance_map = get_affordance_map('a point at the center of the cabinet-1054_link_0 handle')
+rotation_map = get_rotation_map('face the cabinet-1054_link_0 handle')
+gripper_map = get_gripper_map('open everywhere except 1cm around the cabinet-1054_link_0 handle')
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)
+Error executing code:
+objects = ['cabinet-1054_base', 'cabinet-1054_link_2', 'cabinet-1054_link_0', 'cabinet-1054_link_1', 'gripper']
+composer("grasp the cabinet-1054_link_0 handle")
+composer("push the cabinet-1054_link_0 by 25cm towards the cabinet-1054_base")
+composer("back to default pose")
+# done
+Error processing Tabletop-Close-Cabinet-v1: your input query_name is not in the list 
+
+----- Processing environment: Tabletop-Close-Door-v1 -----
+Instruction: close the door
+Objects: ['scene-0-door_8867_base', 'scene-0-door_8867_link_0', 'scene-0-door_8867_link_1', 'scene-0-door_8867_link_2', 'gripper']
+ - scene-0_table-workspace 
+ - scene-0_ground 
+ - scene-0_panda_wristcam 
+ - scene-0_door_8867 
+cannot connect to perception client, please check it is started
+cannot connect to grasp pose detection client, please check it is started
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+Calling VoxPoser with processed objects: ['door_8867_base', 'door_8867_link_0', 'door_8867_link_1', 'door_8867_link_2', 'gripper']
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "planner" generated code
+## context: "objects = ['door_8867_base', 'door_8867_link_0', 'door_8867_link_1', 'door_8867_link_2', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mdoor_8867_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mdoor_8867_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mdoor_8867_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mdoor_8867_link_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: close the door.[39;49;00m[37m[39;49;00m
+composer([33m"[39;49;00m[33mgrasp door_8867_link_2[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mpush door_8867_link_2 by 25cm[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+[37m# done[39;49;00m[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: grasp door_8867_link_2.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+affordance_map = get_affordance_map([33m'[39;49;00m[33ma point at the center of door_8867_link_2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+rotation_map = get_rotation_map([33m'[39;49;00m[33mface door_8867_link_2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+gripper_map = get_gripper_map([33m'[39;49;00m[33mopen everywhere except 1cm around door_8867_link_2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['door_8867_base', 'door_8867_link_0', 'door_8867_link_1', 'door_8867_link_2', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mdoor_8867_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mdoor_8867_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mdoor_8867_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mdoor_8867_link_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: gripper.[39;49;00m[37m[39;49;00m
+gripper = detect([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = gripper[37m[39;49;00m
+
+
+gripper [80 49 67] [ 0.00336026 -0.00383766  0.18031228]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_affordance_map" generated code
+########################################
+[37m# Query: a point at the center of door_8867_link_2.[39;49;00m[37m[39;49;00m
+affordance_map = get_empty_affordance_map()[37m[39;49;00m
+door_8867_link_2 = parse_query_obj([33m'[39;49;00m[33mdoor_8867_link_2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+x, y, z = door_8867_link_2.position[37m[39;49;00m
+affordance_map[x, y, z] = [34m1[39;49;00m[37m[39;49;00m
+ret_val = affordance_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_rotation_map" generated code
+########################################
+[37m# Query: face door_8867_link_2.[39;49;00m[37m[39;49;00m
+rotation_map = get_empty_rotation_map()[37m[39;49;00m
+door_8867_link_2 = parse_query_obj([33m'[39;49;00m[33mdoor_8867_link_2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+target_rotation = vec2quat(door_8867_link_2.normal)[37m[39;49;00m
+rotation_map[:, :, :] = target_rotation[37m[39;49;00m
+ret_val = rotation_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_gripper_map" generated code
+########################################
+[37m# Query: open everywhere except 1cm around door_8867_link_2.[39;49;00m[37m[39;49;00m
+gripper_map = get_empty_gripper_map()[37m[39;49;00m
+[37m# open everywhere[39;49;00m[37m[39;49;00m
+gripper_map[:, :, :] = [34m1[39;49;00m[37m[39;49;00m
+[37m# close when 1cm around door_8867_link_2[39;49;00m[37m[39;49;00m
+door_link = parse_query_obj([33m'[39;49;00m[33mdoor_8867_link_2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+set_voxel_by_radius(gripper_map, door_link.position, radius_cm=[34m1[39;49;00m, value=[34m0[39;49;00m)[37m[39;49;00m
+ret_val = gripper_map[37m[39;49;00m
+
+
+gripper [80 49 67] [ 0.00336026 -0.00383766  0.18031228]
+gripper [80 49 67] [ 0.00336026 -0.00383766  0.18031228]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['door_8867_base', 'door_8867_link_0', 'door_8867_link_1', 'door_8867_link_2', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mdoor_8867_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mdoor_8867_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mdoor_8867_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mdoor_8867_link_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: door_8867_link_2.[39;49;00m[37m[39;49;00m
+door_8867_link_2 = detect([33m'[39;49;00m[33mdoor_8867_link_2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = door_8867_link_2[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'base': 18, 'link_0': 19, 'link_1': 20, 'link_2': 21}
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+all name  {'table-workspace': 16, 'ground': 17, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'base': 18, 'link_0': 19, 'link_1': 20, 'link_2': 21} door_8867_link_2
+---- query_name door_8867_link_2
+Error executing code:
+movable = parse_query_obj('gripper')
+affordance_map = get_affordance_map('a point at the center of door_8867_link_2')
+rotation_map = get_rotation_map('face door_8867_link_2')
+gripper_map = get_gripper_map('open everywhere except 1cm around door_8867_link_2')
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)
+Error executing code:
+objects = ['door_8867_base', 'door_8867_link_0', 'door_8867_link_1', 'door_8867_link_2', 'gripper']
+composer("grasp door_8867_link_2")
+composer("push door_8867_link_2 by 25cm")
+composer("back to default pose")
+# done
+Error processing Tabletop-Close-Door-v1: your input query_name is not in the list 
+
+----- Processing environment: Tabletop-Close-Drawer-v1 -----
+Instruction: close the drawer
+Objects: ['scene-0-cabinet-1054_base', 'scene-0-cabinet-1054_link_2', 'scene-0-cabinet-1054_link_0', 'scene-0-cabinet-1054_link_1', 'gripper']
+--- set joint joint_1 tensor(0.2547)
+ - scene-0_table-workspace 
+ - scene-0_ground 
+ - scene-0_panda_wristcam 
+ - scene-0_cabinet-1054 
+cannot connect to perception client, please check it is started
+cannot connect to grasp pose detection client, please check it is started
+--- set joint joint_1 tensor(0.2547)
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+Calling VoxPoser with processed objects: ['cabinet-1054_base', 'cabinet-1054_link_2', 'cabinet-1054_link_0', 'cabinet-1054_link_1', 'gripper']
+--- set joint joint_1 tensor(0.2547)
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "planner" generated code
+## context: "objects = ['cabinet-1054_base', 'cabinet-1054_link_2', 'cabinet-1054_link_0', 'cabinet-1054_link_1', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mcabinet-1054_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: close the drawer.[39;49;00m[37m[39;49;00m
+composer([33m"[39;49;00m[33mpush close the cabinet-1054_link_2 by 25cm[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+[37m# done[39;49;00m[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: push close the cabinet-1054_link_2 by 25cm.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mcabinet-1054_link_2 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+affordance_map = get_affordance_map([33m'[39;49;00m[33ma point 25cm into the cabinet-1054_link_2 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, affordance_map=affordance_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['cabinet-1054_base', 'cabinet-1054_link_2', 'cabinet-1054_link_0', 'cabinet-1054_link_1', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mcabinet-1054_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcabinet-1054_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: cabinet-1054_link_2 handle.[39;49;00m[37m[39;49;00m
+cabinet_handle = detect([33m'[39;49;00m[33mcabinet-1054_link_2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = cabinet_handle[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'base': 18, 'link_2': 19, 'link_0': 20, 'link_1': 21}
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+all name  {'table-workspace': 16, 'ground': 17, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'base': 18, 'link_2': 19, 'link_0': 20, 'link_1': 21} cabinet-1054_link_2
+---- query_name cabinet-1054_link_2
+Error executing code:
+movable = parse_query_obj('cabinet-1054_link_2 handle')
+affordance_map = get_affordance_map('a point 25cm into the cabinet-1054_link_2 handle')
+execute(movable, affordance_map=affordance_map)
+Error executing code:
+objects = ['cabinet-1054_base', 'cabinet-1054_link_2', 'cabinet-1054_link_0', 'cabinet-1054_link_1', 'gripper']
+composer("push close the cabinet-1054_link_2 by 25cm")
+# done
+Error processing Tabletop-Close-Drawer-v1: your input query_name is not in the list 
+
+----- Processing environment: Tabletop-Close-Microwave-v1 -----
+Instruction: close the microwave
+Objects: ['scene-0-microwave-7310_base', 'scene-0-microwave-7310_link_1', 'scene-0-microwave-7310_link_0', 'gripper']
+--- set joint joint_0 tensor(1.2566)
+ - scene-0_table-workspace 
+ - scene-0_ground 
+ - scene-0_panda_wristcam 
+ - scene-0_microwave-7310 
+cannot connect to perception client, please check it is started
+cannot connect to grasp pose detection client, please check it is started
+--- set joint joint_0 tensor(1.2566)
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+Calling VoxPoser with processed objects: ['microwave-7310_base', 'microwave-7310_link_1', 'microwave-7310_link_0', 'gripper']
+--- set joint joint_0 tensor(1.2566)
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "planner" generated code
+## context: "objects = ['microwave-7310_base', 'microwave-7310_link_1', 'microwave-7310_link_0', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mmicrowave-7310_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mmicrowave-7310_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mmicrowave-7310_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: close the microwave.[39;49;00m[37m[39;49;00m
+composer([33m"[39;49;00m[33mgrasp microwave-7310_link_1 handle[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mpush close microwave-7310_link_1 by 25cm[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mopen gripper[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+[37m# done[39;49;00m[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: grasp microwave-7310_link_1 handle.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+affordance_map = get_affordance_map([33m'[39;49;00m[33ma point at the center of microwave-7310_link_1 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+rotation_map = get_rotation_map([33m'[39;49;00m[33mface microwave-7310_link_1 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+gripper_map = get_gripper_map([33m'[39;49;00m[33mopen everywhere except 1cm around the microwave-7310_link_1 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['microwave-7310_base', 'microwave-7310_link_1', 'microwave-7310_link_0', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mmicrowave-7310_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mmicrowave-7310_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mmicrowave-7310_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: gripper.[39;49;00m[37m[39;49;00m
+gripper = detect([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = gripper[37m[39;49;00m
+
+
+gripper [80 50 66] [1.3412908e-05 1.8415449e-08 1.6978192e-01]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_affordance_map" generated code
+########################################
+[37m# Query: a point at the center of microwave-7310_link_1 handle.[39;49;00m[37m[39;49;00m
+affordance_map = get_empty_affordance_map()[37m[39;49;00m
+microwave_handle = parse_query_obj([33m'[39;49;00m[33mmicrowave-7310_link_1 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+x, y, z = microwave_handle.position[37m[39;49;00m
+affordance_map[x, y, z] = [34m1[39;49;00m[37m[39;49;00m
+ret_val = affordance_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_rotation_map" generated code
+########################################
+[37m# Query: face microwave-7310_link_1 handle.[39;49;00m[37m[39;49;00m
+rotation_map = get_empty_rotation_map()[37m[39;49;00m
+microwave_handle = parse_query_obj([33m'[39;49;00m[33mmicrowave-7310_link_1 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+target_rotation = vec2quat(microwave_handle.normal)[37m[39;49;00m
+rotation_map[:, :, :] = target_rotation[37m[39;49;00m
+ret_val = rotation_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_gripper_map" generated code
+########################################
+[37m# Query: open everywhere except 1cm around the microwave-7310_link_1 handle.[39;49;00m[37m[39;49;00m
+gripper_map = get_empty_gripper_map()[37m[39;49;00m
+[37m# open everywhere[39;49;00m[37m[39;49;00m
+gripper_map[:, :, :] = [34m1[39;49;00m[37m[39;49;00m
+[37m# close when 1cm around the microwave handle[39;49;00m[37m[39;49;00m
+microwave_handle = parse_query_obj([33m'[39;49;00m[33mmicrowave-7310_link_1 handle[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+set_voxel_by_radius(gripper_map, microwave_handle.position, radius_cm=[34m1[39;49;00m, value=[34m0[39;49;00m)[37m[39;49;00m
+ret_val = gripper_map[37m[39;49;00m
+
+
+gripper [80 50 66] [1.3412908e-05 1.8415449e-08 1.6978192e-01]
+gripper [80 50 66] [1.3412908e-05 1.8415449e-08 1.6978192e-01]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['microwave-7310_base', 'microwave-7310_link_1', 'microwave-7310_link_0', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mmicrowave-7310_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mmicrowave-7310_link_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mmicrowave-7310_link_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: microwave-7310_link_1 handle.[39;49;00m[37m[39;49;00m
+microwave_link_1 = detect([33m'[39;49;00m[33mmicrowave-7310_link_1[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = microwave_link_1[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'base': 18, 'link_1': 19, 'link_0': 20}
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+all name  {'table-workspace': 16, 'ground': 17, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'base': 18, 'link_1': 19, 'link_0': 20} microwave-7310_link_1
+---- query_name microwave-7310_link_1
+Error executing code:
+movable = parse_query_obj('gripper')
+affordance_map = get_affordance_map('a point at the center of microwave-7310_link_1 handle')
+rotation_map = get_rotation_map('face microwave-7310_link_1 handle')
+gripper_map = get_gripper_map('open everywhere except 1cm around the microwave-7310_link_1 handle')
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)
+Error executing code:
+objects = ['microwave-7310_base', 'microwave-7310_link_1', 'microwave-7310_link_0', 'gripper']
+composer("grasp microwave-7310_link_1 handle")
+composer("push close microwave-7310_link_1 by 25cm")
+composer("open gripper")
+composer("back to default pose")
+# done
+Error processing Tabletop-Close-Microwave-v1: your input query_name is not in the list 
+
+----- Processing environment: Tabletop-Find-Book-From-Shelf-v1 -----
+Instruction: Find and pick the highest book from the bookshelf and put it on the marker 
+Objects: ['scene-0_book_0', 'scene-0_book_1', 'scene-0_book_2', 'scene-0_book_3', 'scene-0_book_4', 'scene-0_book_5', 'scene-0_book_6', 'scene-0_book_7', 'scene-0_book_8', 'scene-0_goal_region', 'scene-0-bookshelf_Bookshelf', 'scene-0-bookshelf_Bookshelf_base', 'gripper']
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/Bookshelf.json
+Configuration contents: {'urdf_path': 'partnet-mobility-dataset/Bookshelf/Bookshelf.urdf', 'scale': 0.01, 'mass': 0.2, 'fix_root_link': True, 'urdf_config': {'material': {'static_friction': 2.0, 'dynamic_friction': 1.0, 'restitution': 0.0}}, 'name': 'Bookshelf'}
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/book1.json
+Configuration contents: {'usd-path': 'assets_glb/book1.glb', 'scale': 0.07, 'mass': 0.02, 'friction': 1.0, 'orientation': [0, 0, 0]}
+----loaded orientation is  [0, 0, 0]
+Loading asset: book_0 from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book1.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book1.glb
+-------- input scale is  [0.07, 0.07, 0.07]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book1.glb
+the mass have been set to  tensor([0.0200])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: book_0
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/book2.json
+Configuration contents: {'usd-path': 'assets_glb/book2.glb', 'scale': 0.07, 'mass': 0.02, 'friction': 1.0}
+----loaded orientation is  [0, 0, 0]
+Loading asset: book_1 from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book2.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book2.glb
+-------- input scale is  [0.07, 0.07, 0.07]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book2.glb
+the mass have been set to  tensor([0.0200])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: book_1
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/book3.json
+Configuration contents: {'usd-path': 'assets_glb/book3.glb', 'scale': 0.07, 'mass': 0.02, 'friction': 1.0}
+----loaded orientation is  [0, 0, 0]
+Loading asset: book_2 from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book3.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book3.glb
+-------- input scale is  [0.07, 0.07, 0.07]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book3.glb
+the mass have been set to  tensor([0.0200])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: book_2
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/book4.json
+Configuration contents: {'usd-path': 'assets_glb/book4.glb', 'scale': 0.07, 'mass': 0.02, 'friction': 1.0}
+----loaded orientation is  [0, 0, 0]
+Loading asset: book_3 from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book4.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book4.glb
+-------- input scale is  [0.07, 0.07, 0.07]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book4.glb
+the mass have been set to  tensor([0.0200])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: book_3
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/book5.json
+Configuration contents: {'usd-path': 'assets_glb/book5.glb', 'scale': 0.07, 'mass': 0.02, 'friction': 1.0}
+----loaded orientation is  [0, 0, 0]
+Loading asset: book_4 from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book5.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book5.glb
+-------- input scale is  [0.07, 0.07, 0.07]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book5.glb
+the mass have been set to  tensor([0.0200])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: book_4
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/book6.json
+Configuration contents: {'usd-path': 'assets_glb/book6.glb', 'scale': 0.07, 'mass': 0.02, 'friction': 1.0}
+----loaded orientation is  [0, 0, 0]
+Loading asset: book_5 from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book6.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book6.glb
+-------- input scale is  [0.07, 0.07, 0.07]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book6.glb
+the mass have been set to  tensor([0.0200])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: book_5
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/book7.json
+Configuration contents: {'usd-path': 'assets_glb/book7.glb', 'scale': 0.07, 'mass': 0.02, 'friction': 1.0}
+----loaded orientation is  [0, 0, 0]
+Loading asset: book_6 from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book7.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book7.glb
+-------- input scale is  [0.07, 0.07, 0.07]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book7.glb
+the mass have been set to  tensor([0.0200])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: book_6
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/book8.json
+Configuration contents: {'usd-path': 'assets_glb/book8.glb', 'scale': 0.07, 'mass': 0.02, 'friction': 1.0}
+----loaded orientation is  [0, 0, 0]
+Loading asset: book_7 from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book8.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book8.glb
+-------- input scale is  [0.07, 0.07, 0.07]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book8.glb
+the mass have been set to  tensor([0.0200])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: book_7
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/book9.json
+Configuration contents: {'usd-path': 'assets_glb/book9.glb', 'scale': 0.07, 'mass': 0.02, 'friction': 1.0}
+----loaded orientation is  [0, 0, 0]
+Loading asset: book_8 from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book9.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book9.glb
+-------- input scale is  [0.07, 0.07, 0.07]
+Added convex collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/book9.glb
+the mass have been set to  tensor([0.0200])
+Warning: Could not set some physical properties: 'Actor' object has no attribute 'set_damping'
+Successfully created asset: book_8
+<book_6: struct of type <class 'mani_skill.utils.structs.actor.Actor'>; managing 1 <class 'sapien.pysapien.Entity'> objects>
+True
+---- bookshelf size is  [2.00813175 0.4471566  1.25199551]
+0.40804413
+True
+ - scene-0_table-workspace 
+ - scene-0_book_0 
+ - scene-0_book_1 
+ - scene-0_book_2 
+ - scene-0_book_3 
+ - scene-0_book_4 
+ - scene-0_book_5 
+ - scene-0_book_6 
+ - scene-0_book_7 
+ - scene-0_book_8 
+ - scene-0_goal_region 
+ - scene-0_ground 
+ - scene-0_panda_wristcam 
+ - scene-0_bookshelf 
+cannot connect to perception client, please check it is started
+cannot connect to grasp pose detection client, please check it is started
+---- bookshelf size is  [2.00813175 0.4471566  1.25199551]
+0.40804413
+True
+maniskill reset 
+0.4076497
+True
+0.4076497
+True
+maniskill reset 
+0.40764922
+True
+0.40764922
+True
+maniskill reset 
+0.40764937
+True
+0.40764937
+True
+maniskill reset 
+0.40764925
+True
+0.40764925
+True
+maniskill reset 
+0.40764913
+True
+0.40764913
+True
+maniskill reset 
+0.4076492
+True
+0.4076492
+True
+maniskill reset 
+0.4076491
+True
+0.4076491
+True
+maniskill reset 
+0.4076491
+True
+0.4076491
+True
+maniskill reset 
+0.40764895
+True
+0.40764895
+True
+maniskill reset 
+0.40764895
+True
+0.40764895
+True
+0.40764895
+True
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+0.40764895
+True
+0.40764895
+True
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+Calling VoxPoser with processed objects: ['book_0', 'book_1', 'book_2', 'book_3', 'book_4', 'book_5', 'book_6', 'book_7', 'book_8', 'goal_region', 'bookshelf_Bookshelf', 'bookshelf_Bookshelf_base', 'gripper']
+---- bookshelf size is  [2.00813175 0.4471566  1.25199551]
+0.40804413
+True
+maniskill reset 
+0.4076497
+True
+0.4076497
+True
+maniskill reset 
+0.40764922
+True
+0.40764922
+True
+maniskill reset 
+0.40764937
+True
+0.40764937
+True
+maniskill reset 
+0.40764925
+True
+0.40764925
+True
+maniskill reset 
+0.40764913
+True
+0.40764913
+True
+maniskill reset 
+0.4076492
+True
+0.4076492
+True
+maniskill reset 
+0.4076491
+True
+0.4076491
+True
+maniskill reset 
+0.4076491
+True
+0.4076491
+True
+maniskill reset 
+0.40764895
+True
+0.40764895
+True
+maniskill reset 
+0.40764895
+True
+0.40764895
+True
+0.40764895
+True
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+0.40764895
+True
+0.40764895
+True
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "planner" generated code
+## context: "objects = ['book_0', 'book_1', 'book_2', 'book_3', 'book_4', 'book_5', 'book_6', 'book_7', 'book_8', 'goal_region', 'bookshelf_Bookshelf', 'bookshelf_Bookshelf_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mbook_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_3[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_4[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_5[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_6[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_7[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_8[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgoal_region[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbookshelf_Bookshelf[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbookshelf_Bookshelf_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: Find and pick the highest book from the bookshelf and put it on the marker .[39;49;00m[37m[39;49;00m
+composer([33m"[39;49;00m[33mscan the bookshelf_Bookshelf to find the highest book[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mgrasp the book_8 from the top of the bookshelf_Bookshelf[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mmove to the center above the goal_region[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mopen gripper[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+[37m# done[39;49;00m[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: scan the bookshelf_Bookshelf to find the highest book.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mscanner[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+affordance_map = get_affordance_map([33m'[39;49;00m[33ma point above bookshelf_Bookshelf[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, affordance_map=affordance_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['book_0', 'book_1', 'book_2', 'book_3', 'book_4', 'book_5', 'book_6', 'book_7', 'book_8', 'goal_region', 'bookshelf_Bookshelf', 'bookshelf_Bookshelf_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mbook_0[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_3[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_4[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_5[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_6[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_7[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbook_8[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgoal_region[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbookshelf_Bookshelf[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mbookshelf_Bookshelf_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: scanner.[39;49;00m[37m[39;49;00m
+scanner = detect([33m'[39;49;00m[33mscanner[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = scanner[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'book_0': 20, 'book_1': 21, 'book_2': 22, 'book_3': 23, 'book_4': 24, 'book_5': 25, 'book_6': 26, 'book_7': 27, 'book_8': 28, 'goal_region': 29, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'Bookshelf': 18, 'Bookshelf_base': 19}
+0.40764895
+True
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+all name  {'table-workspace': 16, 'ground': 17, 'book_0': 20, 'book_1': 21, 'book_2': 22, 'book_3': 23, 'book_4': 24, 'book_5': 25, 'book_6': 26, 'book_7': 27, 'book_8': 28, 'goal_region': 29, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15, 'Bookshelf': 18, 'Bookshelf_base': 19} scanner
+---- query_name scanner
+Error executing code:
+movable = parse_query_obj('scanner')
+affordance_map = get_affordance_map('a point above bookshelf_Bookshelf')
+execute(movable, affordance_map=affordance_map)
+Error executing code:
+objects = ['book_0', 'book_1', 'book_2', 'book_3', 'book_4', 'book_5', 'book_6', 'book_7', 'book_8', 'goal_region', 'bookshelf_Bookshelf', 'bookshelf_Bookshelf_base', 'gripper']
+composer("scan the bookshelf_Bookshelf to find the highest book")
+composer("grasp the book_8 from the top of the bookshelf_Bookshelf")
+composer("back to default pose")
+composer("move to the center above the goal_region")
+composer("open gripper")
+composer("back to default pose")
+# done
+Error processing Tabletop-Find-Book-From-Shelf-v1: your input query_name is not in the list 
+
+----- Processing environment: Tabletop-Find-Cube-WithPivot-v1 -----
+Instruction: Move the heavy cube to the goal region
+Objects: ['scene-0_long_board', 'scene-0_cube1', 'scene-0_cube2', 'scene-0_goal_region', 'scene-0_pivot_base', 'gripper']
+Loaded object configuration from /home/lr-2002/project/reasoning_manipulation/ManiSkill/configs/plugin_triangle.json
+Configuration contents: {'usd-path': 'assets_glb/plugin_triangle.glb', 'scale': 0.03, 'mass': 0.1, 'friction': 1.0, 'orientation': [0, 0, 0], 'position': [0.5, 0.3, 0.1]}
+----loaded orientation is  [0, 0, 0]
+Loading asset: pivot_base from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/plugin_triangle.glb
+Found collision mesh: /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/plugin_triangle.glb
+-------- input scale is  [0.03, 0.03, 0.03]
+Added exact collision geometry from /home/lr-2002/project/reasoning_manipulation/ManiSkill/assets_glb/plugin_triangle.glb
+Warning: Could not set some physical properties: 'sapien.pysapien.physx.PhysxRigidStaticComponent' object has no attribute 'set_mass'
+Successfully created asset: pivot_base
+True
+ - scene-0_table-workspace 
+ - scene-0_long_board 
+ - scene-0_cube1 
+ - scene-0_cube2 
+ - scene-0_goal_region 
+ - scene-0_ground 
+ - scene-0_pivot_base 
+ - scene-0_panda_wristcam 
+cannot connect to perception client, please check it is started
+cannot connect to grasp pose detection client, please check it is started
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+Calling VoxPoser with processed objects: ['long_board', 'cube1', 'cube2', 'goal_region', 'pivot_base', 'gripper']
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+maniskill reset 
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+##################################################
+## voxel resolution: [0.02  0.016 0.01 ]
+##################################################
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "planner" generated code
+## context: "objects = ['long_board', 'cube1', 'cube2', 'goal_region', 'pivot_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mlong_board[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgoal_region[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mpivot_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: Move the heavy cube to the goal region.[39;49;00m[37m[39;49;00m
+composer([33m"[39;49;00m[33mgrasp cube2[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mmove to the top of the goal region[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mopen gripper[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+composer([33m"[39;49;00m[33mback to default pose[39;49;00m[33m"[39;49;00m)[37m[39;49;00m
+[37m# done[39;49;00m[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "composer" generated code
+########################################
+[37m# Query: grasp cube2.[39;49;00m[37m[39;49;00m
+movable = parse_query_obj([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+affordance_map = get_affordance_map([33m'[39;49;00m[33ma point at the center of cube2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+rotation_map = get_rotation_map([33m'[39;49;00m[33mface cube2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+gripper_map = get_gripper_map([33m'[39;49;00m[33mopen everywhere except 1cm around cube2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+execute(movable, affordance_map=affordance_map, rotation_map=rotation_map, gripper_map=gripper_map)[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['long_board', 'cube1', 'cube2', 'goal_region', 'pivot_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mlong_board[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgoal_region[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mpivot_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: gripper.[39;49;00m[37m[39;49;00m
+gripper = detect([33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = gripper[37m[39;49;00m
+
+
+gripper [80 50 66] [1.3412908e-05 1.8415449e-08 1.6978192e-01]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_affordance_map" generated code
+########################################
+[37m# Query: a point at the center of cube2.[39;49;00m[37m[39;49;00m
+affordance_map = get_empty_affordance_map()[37m[39;49;00m
+cube2 = parse_query_obj([33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+x, y, z = cube2.position[37m[39;49;00m
+affordance_map[x, y, z] = [34m1[39;49;00m[37m[39;49;00m
+ret_val = affordance_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_rotation_map" generated code
+########################################
+[37m# Query: face cube2.[39;49;00m[37m[39;49;00m
+rotation_map = get_empty_rotation_map()[37m[39;49;00m
+cube2 = parse_query_obj([33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+target_rotation = vec2quat(cube2.normal)[37m[39;49;00m
+rotation_map[:, :, :] = target_rotation[37m[39;49;00m
+ret_val = rotation_map[37m[39;49;00m
+
+
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "get_gripper_map" generated code
+########################################
+[37m# Query: open everywhere except 1cm around cube2.[39;49;00m[37m[39;49;00m
+gripper_map = get_empty_gripper_map()[37m[39;49;00m
+[37m# open everywhere[39;49;00m[37m[39;49;00m
+gripper_map[:, :, :] = [34m1[39;49;00m[37m[39;49;00m
+[37m# close when 1cm around cube2[39;49;00m[37m[39;49;00m
+cube2 = parse_query_obj([33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+set_voxel_by_radius(gripper_map, cube2.position, radius_cm=[34m1[39;49;00m, value=[34m0[39;49;00m)[37m[39;49;00m
+ret_val = gripper_map[37m[39;49;00m
+
+
+gripper [80 50 66] [1.3412908e-05 1.8415449e-08 1.6978192e-01]
+gripper [80 50 66] [1.3412908e-05 1.8415449e-08 1.6978192e-01]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['long_board', 'cube1', 'cube2', 'goal_region', 'pivot_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mlong_board[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgoal_region[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mpivot_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: cube2.[39;49;00m[37m[39;49;00m
+cube2 = detect([33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = cube2[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'pivot_base': 18, 'long_board': 19, 'cube1': 20, 'cube2': 21, 'goal_region': 22, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15}
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+all name  {'table-workspace': 16, 'ground': 17, 'pivot_base': 18, 'long_board': 19, 'cube1': 20, 'cube2': 21, 'goal_region': 22, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15} cube2
+---- query_name cube2
+object id is 21
+obj size (873, 3)
+[91m cube2 normal is [ 0.36764891 -0.18072566  0.30675428]  [0m
+[91m cube2 position is [-0.16169254  0.10955552  0.04561399]  [0m
+cube2 [72 56 52] [-0.16169254  0.10955552  0.03561399]
+{'table-workspace': 16, 'ground': 17, 'pivot_base': 18, 'long_board': 19, 'cube1': 20, 'cube2': 21, 'goal_region': 22, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15}
+[91m cube2 normal is [ 0.36764891 -0.18072566  0.30675428]  [0m
+[91m cube2 position is [-0.16169254  0.10955552  0.04561399]  [0m
+cube2 [72 56 52] [-0.16169254  0.10955552  0.03561399]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['long_board', 'cube1', 'cube2', 'goal_region', 'pivot_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mlong_board[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgoal_region[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mpivot_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: cube2.[39;49;00m[37m[39;49;00m
+cube2 = detect([33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = cube2[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'pivot_base': 18, 'long_board': 19, 'cube1': 20, 'cube2': 21, 'goal_region': 22, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15}
+[91m cube2 normal is [ 0.36764891 -0.18072566  0.30675428]  [0m
+[91m cube2 position is [-0.16169254  0.10955552  0.04561399]  [0m
+cube2 [72 56 52] [-0.16169254  0.10955552  0.03561399]
+{'table-workspace': 16, 'ground': 17, 'pivot_base': 18, 'long_board': 19, 'cube1': 20, 'cube2': 21, 'goal_region': 22, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15}
+[91m cube2 normal is [ 0.36764891 -0.18072566  0.30675428]  [0m
+[91m cube2 position is [-0.16169254  0.10955552  0.04561399]  [0m
+cube2 [72 56 52] [-0.16169254  0.10955552  0.03561399]
+(using cache) *** OpenAI API call took 0.00s ***
+########################################
+## "parse_query_obj" generated code
+## context: "objects = ['long_board', 'cube1', 'cube2', 'goal_region', 'pivot_base', 'gripper']"
+########################################
+objects = [[33m'[39;49;00m[33mlong_board[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube1[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgoal_region[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mpivot_base[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mgripper[39;49;00m[33m'[39;49;00m][37m[39;49;00m
+[37m# Query: cube2.[39;49;00m[37m[39;49;00m
+cube2 = detect([33m'[39;49;00m[33mcube2[39;49;00m[33m'[39;49;00m)[37m[39;49;00m
+ret_val = cube2[37m[39;49;00m
+
+
+{'table-workspace': 16, 'ground': 17, 'pivot_base': 18, 'long_board': 19, 'cube1': 20, 'cube2': 21, 'goal_region': 22, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15}
+[91m cube2 normal is [ 0.36764891 -0.18072566  0.30675428]  [0m
+[91m cube2 position is [-0.16169254  0.10955552  0.04561399]  [0m
+cube2 [72 56 52] [-0.16169254  0.10955552  0.03561399]
+{'table-workspace': 16, 'ground': 17, 'pivot_base': 18, 'long_board': 19, 'cube1': 20, 'cube2': 21, 'goal_region': 22, 'panda_link0': 1, 'panda_link1': 2, 'panda_link2': 3, 'panda_link3': 4, 'panda_link4': 5, 'panda_link5': 6, 'panda_link6': 7, 'panda_link7': 8, 'panda_link8': 9, 'panda_hand': 10, 'panda_hand_tcp': 11, 'panda_leftfinger': 12, 'panda_rightfinger': 13, 'camera_base_link': 14, 'camera_link': 15}
+[91m cube2 normal is [ 0.36764891 -0.18072566  0.30675428]  [0m
+[91m cube2 position is [-0.16169254  0.10955552  0.04561399]  [0m
+cube2 [72 56 52] [-0.16169254  0.10955552  0.03561399]
+cam2world_gl [[-1.1920929e-07 -5.8123815e-01  8.1373358e-01  6.0000002e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  8.1373358e-01  5.8123809e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07  8.9442730e-01 -4.4721374e-01 -5.0000000e-01]
+ [-1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  4.4721374e-01  8.9442712e-01  1.8000000e+00]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+cam2world_gl [[-1.1920929e-07 -9.8639405e-01  1.6439910e-01  5.0000000e-01]
+ [ 1.0000001e+00 -1.1920929e-07  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  1.6439910e-01  9.8639393e-01  6.0000002e-01]
+ [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+[planners.py | 21:8:8.102] start
+[planners.py | 21:8:8.176] start optimizing, start_pos: [80 50 66]
+[planners.py | 21:8:8.182] optimization finished; path length: 8
+[planners.py | 21:8:8.182] after postprocessing, path length: 8
+[planners.py | 21:8:8.182] last waypoint: [72.03030303 55.87878788 52.        ]
+[94m[interfaces.py | 21:8:8] planner time: 0.082s[0m
+[94m[interfaces.py | 21:8:8] overwriting gripper to less common value for the last waypoint[0m
+[94m[interfaces.py | 21:8:8] start executing path via controller (10 waypoints)[0m
+the arm quat and pose in apply_action [5.49435616e-04 4.65261936e-03 1.66666687e-01 0.00000000e+00
+ 1.00000000e+00 0.00000000e+00 0.00000000e+00 1.00000000e+00]
+gripper [80 50 66] [0.00045524 0.00272492 0.16802078]
+[94m[interfaces.py | 21:8:8] completed waypoint 1 (wp: [0.001 0.005 0.167], actual: [0.    0.003 0.168], target: [-0.16   0.103  0.025], start: [0.001 0.005 0.167], dist2target: 0.2370000034570694)[0m
+the arm quat and pose in apply_action [-0.03736222  0.04670078  0.14646465  0.          1.          0.
+  0.          1.        ]
+
+Process interrupted by user (Ctrl+C)

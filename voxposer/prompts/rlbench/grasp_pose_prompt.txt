@@ -1,0 +1,13 @@
+Now I need you help me select a correct grasping posture from four images I given you for a robot to grasp OBJECT.
+In each image there is a two-fingered claw used to represent the grasping posture.
+You need to give me answer with format I show you below.
+Answer: [True, False, False, False] 
+# The first True indicates grasping posture in first image is correct, robot can use it to grasp OBJECT.
+# The third False indicates grasping posture in third image is not correct, robot cannot use it to grasp OBJECT.
+
+Finally, you should think carefully and give me correct answer.
+Note:
+1.You must give me your answer for each image with format above. And you can only select one image give True answer.
+2.You need to consider how to grasp the OBJECT in real world.
+3.Images I given you are 2D image and there is only one grasping posture in each image which has no collision with OBJECT.
+4.I don't want to grab the OBJECT at an angle. You don't need to consider the stability of the grasp, if you think it can grasp a part with a suitable posture then you can consider it a good posture.

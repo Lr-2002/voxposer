@@ -1,0 +1,394 @@
+bodies {
+  name: "panda_link0"
+  colliders {
+    position {
+    }
+    rotation {
+    }
+    mesh {
+      name: "meshes/collision/link0.stl"
+      scale: 1.0
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.0
+}
+bodies {
+  name: "panda_link1"
+  colliders {
+    position {
+    }
+    rotation {
+    }
+    mesh {
+      name: "meshes/collision/link1.stl"
+      scale: 1.0
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.0
+}
+bodies {
+  name: "panda_link2"
+  colliders {
+    position {
+    }
+    rotation {
+    }
+    mesh {
+      name: "meshes/collision/link2.stl"
+      scale: 1.0
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.0
+}
+bodies {
+  name: "panda_link3"
+  colliders {
+    position {
+    }
+    rotation {
+    }
+    mesh {
+      name: "meshes/collision/link3.stl"
+      scale: 1.0
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.0
+}
+bodies {
+  name: "panda_link4"
+  colliders {
+    position {
+    }
+    rotation {
+    }
+    mesh {
+      name: "meshes/collision/link4.stl"
+      scale: 1.0
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.0
+}
+bodies {
+  name: "panda_link5"
+  colliders {
+    position {
+    }
+    rotation {
+    }
+    mesh {
+      name: "meshes/collision/link5.stl"
+      scale: 1.0
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.0
+}
+bodies {
+  name: "panda_link6"
+  colliders {
+    position {
+    }
+    rotation {
+    }
+    mesh {
+      name: "meshes/collision/link6.stl"
+      scale: 1.0
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.0
+}
+bodies {
+  name: "panda_link7"
+  colliders {
+    position {
+    }
+    rotation {
+    }
+    mesh {
+      name: "meshes/collision/link7.stl"
+      scale: 1.0
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 2.0
+}
+bodies {
+  name: "floor"
+  colliders {
+    plane {
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.0
+  frozen {
+    all: true
+  }
+}
+joints {
+  name: "panda_joint1"
+  stiffness: 10000.0
+  parent: "panda_link0"
+  child: "panda_link1"
+  parent_offset {
+    z: 0.333
+  }
+  rotation {
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+  }
+}
+joints {
+  name: "panda_joint2"
+  stiffness: 10000.0
+  parent: "panda_link1"
+  child: "panda_link2"
+  parent_offset {
+  }
+  rotation {
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: -90.0
+  }
+}
+joints {
+  name: "panda_joint3"
+  stiffness: 10000.0
+  parent: "panda_link2"
+  child: "panda_link3"
+  parent_offset {
+    y: -0.316
+  }
+  rotation {
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: 90.0
+  }
+}
+joints {
+  name: "panda_joint4"
+  stiffness: 10000.0
+  parent: "panda_link3"
+  child: "panda_link4"
+  parent_offset {
+    x: 0.0825
+  }
+  rotation {
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: 90.0
+  }
+}
+joints {
+  name: "panda_joint5"
+  stiffness: 10000.0
+  parent: "panda_link4"
+  child: "panda_link5"
+  parent_offset {
+    x: -0.0825
+    y: 0.384
+  }
+  rotation {
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: -90.0
+  }
+}
+joints {
+  name: "panda_joint6"
+  stiffness: 10000.0
+  parent: "panda_link5"
+  child: "panda_link6"
+  parent_offset {
+  }
+  rotation {
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: 90.0
+  }
+}
+joints {
+  name: "panda_joint7"
+  stiffness: 10000.0
+  parent: "panda_link6"
+  child: "panda_link7"
+  parent_offset {
+    x: 0.088
+  }
+  rotation {
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: 90.0
+  }
+}
+actuators {
+  name: "panda_joint1"
+  joint: "panda_joint1"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "panda_joint2"
+  joint: "panda_joint2"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "panda_joint3"
+  joint: "panda_joint3"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "panda_joint4"
+  joint: "panda_joint4"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "panda_joint5"
+  joint: "panda_joint5"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "panda_joint6"
+  joint: "panda_joint6"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "panda_joint7"
+  joint: "panda_joint7"
+  strength: 100.0
+  torque {
+  }
+}
+friction: 0.6
+angular_damping: -0.05
+baumgarte_erp: 0.1
+collide_include {
+}
+dt: 0.02
+substeps: 4
+mesh_geometries {
+  name: "meshes/collision/link0.stl"
+  path: "meshes/collision/link0.stl"
+}
+mesh_geometries {
+  name: "meshes/collision/link1.stl"
+  path: "meshes/collision/link1.stl"
+}
+mesh_geometries {
+  name: "meshes/collision/link2.stl"
+  path: "meshes/collision/link2.stl"
+}
+mesh_geometries {
+  name: "meshes/collision/link3.stl"
+  path: "meshes/collision/link3.stl"
+}
+mesh_geometries {
+  name: "meshes/collision/link4.stl"
+  path: "meshes/collision/link4.stl"
+}
+mesh_geometries {
+  name: "meshes/collision/link5.stl"
+  path: "meshes/collision/link5.stl"
+}
+mesh_geometries {
+  name: "meshes/collision/link6.stl"
+  path: "meshes/collision/link6.stl"
+}
+mesh_geometries {
+  name: "meshes/collision/link7.stl"
+  path: "meshes/collision/link7.stl"
+}
